@@ -1,3 +1,16 @@
+# Digital Portfolio v0.1
+
+## What?
+Ever dreamt of having your awesome personal portfolio website? Have zero experience coding websites? Then you have come to the right place. Keep reading, and in a matter of minutes (read: a few days of frustration) you will have your website up and running.
+## Why?
+- To showcase my React.js/Next.js skills
+- To give a tool to my friends to have an awesome digital portfolio (and stop asking me to build one for them)
+- To start a _useful_ project, where devs of all skill levels can collaborate
+- To prepare the front-end of a bigger project centered around digital resume/portfolio building
+## How?
+_Fool-proof instructions on going live (using Vercel) will go here_ 
+## Technical Details
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
