@@ -1,5 +1,8 @@
-import Employments from './employment/index';
+import Landing from '../components/landing/Container';
+import Intro from '../components/intro/Container';
+import Employments from '../components/employment/Container';
 
+import {Fragment} from "react";
 import fsPromises from 'fs/promises';
 
 export async function getStaticProps() {
@@ -15,7 +18,11 @@ export async function getStaticProps() {
 
 function Home(props) {
     return (
-        <Employments employments={props.data.careers}/>
+        <Fragment>
+            <Landing data={props.data.profile} layout={props.data.layout}/>
+            <Intro data={props.data.profile} contact={props.data.contact_details}/>
+            <Employments data={props.data.careers}/>
+        </Fragment>
     )
 }
 
