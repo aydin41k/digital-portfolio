@@ -32,7 +32,7 @@ function Employment(props) {
                             <br/>
                             <span className="link">
                                 <span className="glyphicon glyphicon-link"></span>
-                                <a href={link} target="_blank">{link}</a>
+                                <a href={link} target="_blank" rel="noreferrer">{link}</a>
                             </span>
                         </span>
                     }
