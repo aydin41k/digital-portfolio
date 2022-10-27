@@ -1,7 +1,6 @@
-<div style="text-align: center">
-    <div style="font-size: 4em">📜</div>
-    <div style="font-size:2em; font-weight:700; ">Digital Portfolio v0.3</div>
-</div>
+<p align="center">
+    <h1>:scroll:<br>Digital Portfolio v0.3</h1>
+</p>
 
 ## What?
 
