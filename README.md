@@ -1,8 +1,19 @@
-# Digital Portfolio v0.3
+<div style="text-align: center">
+    <div style="font-size: 4em">📜</div>
+    <div style="font-size:2em; font-weight:700; ">Digital Portfolio v0.3</div>
+</div>
 
 ## What?
 
 Ever dreamt of having your awesome personal portfolio website? Have zero experience coding websites? Then you have come to the right place. Keep reading, and in a matter of minutes (read: a few days of frustration) you will have your website up and running.
+
+## Where?
+
+This project is deployed to: 
+
+https://digital-portfolio-seven.vercel.app/ 
+
+Keep reading and you'll see how you can deploy your resume just like this.
 
 ## Why?
 
@@ -16,9 +27,12 @@ Ever dreamt of having your awesome personal portfolio website? Have zero experie
 0. [Fork the repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo), make it yours
 1. Populate `data/resume.min.json` file with your details (currently holds sample data with Harry Potter's info)
 2. Deploy on your own, or if you don't know how to, keep reading
-3. _Fool-proof instructions on going live (using Vercel) will go here_
+3. Go to https://vercel.com/
+4. Click on "Start Deploying" and then "Continue with Github"
+5. Create an account on Vercel (they have a free tier for hobby projects - good to kick off), select and deploy your repo
+6. Now every time code is pushed/merged to the main branch of the repo, Vercel will pull it and update your deployment. Just like in those cool movies
 
-## Technical Details
+## What tech?
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Follow the link to get started with local setup and other guidelines.
 
