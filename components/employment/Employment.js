@@ -29,7 +29,7 @@ function Employment(props) {
                     </span>
                     {link &&
                         <span>
-                            <span className="seperator">|</span>
+                            <br/>
                             <span className="link">
                                 <span className="glyphicon glyphicon-link"></span>
                                 <a href={link} target="_blank">{link}</a>

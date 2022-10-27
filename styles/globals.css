@@ -28,3 +28,15 @@ a {
 .block {
   display: block;
 }
+
+.bg-light {
+  background-color: #f3efe0!important;
+}
+
+.bg-dark {
+  background-color: #a1d0de!important;
+}
+
+.glyphicon {
+  margin-right: 5px;
+}

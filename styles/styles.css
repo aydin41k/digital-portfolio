@@ -26,7 +26,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .icon.icon-email { background-position: 0px -96px; }
 
 .jumbotron {
-	background: no-repeat left bottom fixed url(images/animbg.gif);
+	background: no-repeat left bottom fixed;
 
 	-webkit-background-size: 100%; 
     -moz-background-size: 100%; 
@@ -43,16 +43,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	
 	margin-bottom: 0px;
 	padding: 0px;
-}  
-/*.jumbotron:before { 
-	border: 1px solid #FFFFFF;
-	bottom: 30px;
-	content: "";
-	left: 30px;
-	position: absolute;
-	right: 30px;
-	top: 30px;
-}*/
+}
 .jumbotron .overlay { background-color: #22A39F; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; opacity: 0; filter:alpha(opacity=75); z-index: 2; }
 
 .jumbotron .container { position: relative; top: 28%; z-index: 4; text-align: center; }
@@ -64,7 +55,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	color: #FFFFFF; 
 	font-size: 30px; 
 	padding-right: 2px; 
-	padding-top: 20px; 
+	padding-top: 20px;
 	
 	animation-name: wiggle;
 	animation-duration: 1.2s;

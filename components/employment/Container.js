@@ -1,11 +1,16 @@
 import Employment from "./Employment";
 
 function Employments(props) {
+    const employments = props.data.map((employment, index) => {
+        return <Employment key={index} details={employment}/>;
+    });
+
     return (
         <div id="experiences" className="container">
-            <h1>Employment</h1>
+            <h2>Employment</h2>
+            <hr/>
             <div className="experiences">
-                {props.employments.map(employment => <Employment key={employment.id} details={employment}/>)}
+                {employments}
             </div>
         </div>
     );
