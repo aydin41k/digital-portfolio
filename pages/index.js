@@ -3,6 +3,7 @@ import Intro from '../components/intro/Container';
 import Educations from '../components/education/Container';
 import Employments from '../components/employment/Container';
 import Projects from "../components/projects/Container";
+import Abilities from "../components/abilities/Container";
 
 import {Fragment} from "react";
 import fsPromises from 'fs/promises';
@@ -26,6 +27,13 @@ function Home(props) {
             <Educations data={props.data.educations} bgcolor="bg-white"/>
             <Employments data={props.data.careers} bgcolor="bg-light"/>
             <Projects data={props.data.projects} bgcolor="bg-white"/>
+            <Abilities
+                bgcolor="bg-light"
+                computer_languages={props.data.computer_languages}
+                skills={props.data.skills}
+                languages={props.data.languages}
+                tools={props.data.tools}
+            />
         </Fragment>
     )
 }
