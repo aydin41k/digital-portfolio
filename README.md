@@ -38,3 +38,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Can I contribute?
 
 Sure! Any improvements are welcome. Feel free to open PR's. Especially welcome are solutions to the issues listed in the "Issues" section.
+
+## Whom should I credit?
+
+If you use this codebase, I would appreciate if you credit me somewhere. I won't sue you if you don't, but I am sure you will feel better :smile:
+
+On that note, I would like to thank [Pascal van Gemert](https://github.com/pascalvgemert/resume) for the inspiration for the design of this portfolio.

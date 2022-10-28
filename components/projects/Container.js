@@ -6,11 +6,13 @@ function Projects({data, bgcolor}) {
     });
 
     return (
-        <div id="projects" className="container">
-            <h2>Projects</h2>
-            <hr/>
-            <div className="row">
-                {projects}
+        <div className={bgcolor}>
+            <div id="projects" className="container">
+                <h2>Projects</h2>
+                <hr/>
+                <div className="row">
+                    {projects}
+                </div>
             </div>
         </div>
     );
