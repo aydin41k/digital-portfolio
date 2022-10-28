@@ -29,6 +29,10 @@ a {
   display: block;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .bg-light {
   background-color: #f3efe0!important;
 }

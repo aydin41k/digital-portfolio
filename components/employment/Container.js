@@ -6,11 +6,13 @@ function Employments(props) {
     });
 
     return (
-        <div id="experiences" className="container">
-            <h2>Employment</h2>
-            <hr/>
-            <div className="experiences">
-                {employments}
+        <div className={props.bgcolor}>
+            <div id="experiences" className="container">
+                <h2>Employment</h2>
+                <hr/>
+                <div className="experiences">
+                    {employments}
+                </div>
             </div>
         </div>
     );

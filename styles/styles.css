@@ -85,11 +85,11 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 #profile .row > div { margin-bottom: 20px; }
 #profile .row > div img { width: 100%; max-width: 246px; height: auto; }
 	
-#experiences .experience { margin-bottom: 20px; }
-#experiences .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
-#experiences .experience .experience-details { display: block; margin-top: 6px; }
-#experiences .experience .experience-details * { color: #22A39F; }
-#experiences .experience .experience-details .seperator { color: #BCBCBC; }
+.experience { margin-bottom: 20px; }
+.experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
+.experience .experience-details { display: block; margin-top: 6px; }
+.experience .experience-details * { color: #22A39F; }
+.experience .experience-details .seperator { color: #BCBCBC; }
 
 #abilities ul > li { min-height: 30px; padding: 3px 0px; }
 #abilities ul > li:hover { background: #F2F2F2; }
