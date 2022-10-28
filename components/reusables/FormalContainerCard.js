@@ -1,4 +1,4 @@
-function FormalCard(props) {
+function FormalContainerCard(props) {
     return (
         <div className={props.bgcolor}>
             <div id={props.id} className={`container ${props.bgcolor}`}>
@@ -12,4 +12,4 @@ function FormalCard(props) {
     );
 }
 
-export default FormalCard;
+export default FormalContainerCard;
