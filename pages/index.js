@@ -4,9 +4,11 @@ import Educations from '../components/education/Container';
 import Employments from '../components/employment/Container';
 import Projects from "../components/projects/Container";
 import Abilities from "../components/abilities/Container";
+import Social from "../components/social/Container";
 
 import {Fragment} from "react";
 import fsPromises from 'fs/promises';
+import Footer from "../components/footer/Footer";
 
 export async function getStaticProps() {
     const jsonData = await fsPromises.readFile('./data/resume.min.json');
@@ -34,6 +36,12 @@ function Home(props) {
                 languages={props.data.languages}
                 tools={props.data.tools}
             />
+            <Social
+                bgcolor="bg-white"
+                active_citizenship={props.data.active_citizenship}
+                interests={props.data.interests}
+            />
+            <Footer/>
         </Fragment>
     )
 }

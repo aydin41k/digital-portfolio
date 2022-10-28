@@ -1,20 +1,16 @@
-import FormalCard from "../reusables/FormalCard";
-import Education from "./Education";
+import FormalContainerCard from "../reusables/FormalContainerCard";
+import FormalUnitCard from "../reusables/FormalUnitCard";
 
 function Educations(props) {
-    const educations = props.data.map((education, index) => {
-        return <Education key={index} details={education}/>;
-    });
-
     return (
-        <FormalCard
+        <FormalContainerCard
             id="educations"
             title="Education"
             extraClass="experiences"
             bgcolor={props.bgcolor}
         >
-            {educations}
-        </FormalCard>
+            {props.data.map((education, index) => <FormalUnitCard key={index} details={education}/>)}
+        </FormalContainerCard>
     );
 }
 
