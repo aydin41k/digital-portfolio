@@ -353,7 +353,7 @@ figure.effect:hover p {
 	transform: translate3d(0,0,0);
 }
 
-footer.container {
+footer {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size:0.8em;
