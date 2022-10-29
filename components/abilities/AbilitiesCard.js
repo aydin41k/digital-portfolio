@@ -7,7 +7,7 @@ function AbilitiesCard({data}) {
         <div className="row">
             <div className="col-md-6">
                 <ul className="no-bullets">
-                    {data.slice(0,halfLength).map((ability, index) => <Ability key={index} data={ability}/>)}
+                    {data.slice(0,halfLength).map((ability, index) => <Ability key={index} index={index} data={ability}/>)}
                 </ul>
             </div>
             <div className="col-md-6">

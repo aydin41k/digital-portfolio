@@ -1,12 +1,13 @@
-function Ability({data}) {
-    const starFilled = Array(data.level).fill(<span className="glyphicon glyphicon-star filled"></span>);
-    const starNotFilled = Array(5 - data.level).fill(<span className="glyphicon glyphicon-star"></span>);
+import Stars from "./Stars";
+
+function Ability({data, index}) {
+    const theKey = 'ability_' + index + Math.ceil(Math.random()*1000);
+
     return (
-        <li>
+        <li key={theKey}>
             <span className="ability-title">{data.title}</span>
             <span className="ability-score">
-                {starFilled}
-                {starNotFilled}
+                <Stars count={data.level}/>
             </span>
         </li>
     );

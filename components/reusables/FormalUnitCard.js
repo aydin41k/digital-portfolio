@@ -15,22 +15,19 @@ function FormalUnitCard(props) {
         <div className="experience row">
             <div className="col-md-4">
                 <h4>{title}</h4>
-                {start_date && <p className="experience-period">{startDate} - {endDate}</p>}
+                {start_date && <div className="experience-period">{startDate} - {endDate}</div>}
             </div>
             <div className="col-md-8">
-                <p>
-                    {specification && (<strong>{specification}{level && `, ${level}`}</strong>)}
-                    <span className="hidden-phone">
-									</span>
-                    <span className="experience-details">
-					    {location && <span className="location">
-						    <span className="glyphicon glyphicon-map-marker"></span>
-                            {location}
-                        </span>}
-                    </span>
-                    {description}
-                    {date && <p className="interest-date">{dateDate}</p>}
-                </p>
+                {specification && (<strong>{specification}{level && `, ${level}`}</strong>)}
+                <span className="hidden-phone"></span>
+                <span className="experience-details">
+                    {location && <span className="location">
+                        <span className="glyphicon glyphicon-map-marker"></span>
+                        {location}
+                    </span>}
+                </span>
+                {description}
+                {date && <div className="interest-date">{dateDate}</div>}
             </div>
         </div>
     );
