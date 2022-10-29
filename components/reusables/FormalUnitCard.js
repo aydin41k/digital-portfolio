@@ -20,8 +20,7 @@ function FormalUnitCard(props) {
             <div className="col-md-8">
                 <p>
                     {specification && (<strong>{specification}{level && `, ${level}`}</strong>)}
-                    <span className="hidden-phone">
-									</span>
+                    <span className="hidden-phone"></span>
                     <span className="experience-details">
 					    {location && <span className="location">
 						    <span className="glyphicon glyphicon-map-marker"></span>
