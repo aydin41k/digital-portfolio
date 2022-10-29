@@ -1,6 +1,6 @@
-<p align="center">
-    <h1>:scroll:<br>Digital Portfolio v0.3</h1>
-</p>
+<div align="center">
+    <h1>:scroll:<br>Digital Portfolio v0.9</h1>
+</div>
 
 ## What?
 

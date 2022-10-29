@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
 
 function Container({data, layout}) {
-    const addBgImage = layout.hero_bg_img ? {background: `url(${layout.hero_bg_img})`} : {};
+    const addBgImage = layout.hero_bg_img ? {backgroundImage: `url(${layout.hero_bg_img})`} : {};
 
     return (
         <div id="top" className={`jumbotron bg-dark ${styles.jumbotron}`} style={addBgImage}>
