@@ -1,6 +1,13 @@
 import Head from 'next/head';
+import {useEffect, useState} from "react";
 
 function HeadMeta({data}) {
+    const [pageUrl, setPageUrl] = useState('');
+
+    useEffect(() => {
+        setPageUrl(window.location.origin)
+    },[]);
+
     const title = `Portfolio - ${data.first_name} ${data.last_name}`;
     const author = `${data.first_name} ${data.last_name}`;
     const description = data.biography;
@@ -17,7 +24,7 @@ function HeadMeta({data}) {
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta property="og:type" content="Digital Porfolio" />
-            <meta property="og:url" content={window.location.origin} />
+            <meta property="og:url" content={pageUrl} />
             <meta property="og:image" content={profile_picture} />
         </Head>
     )
