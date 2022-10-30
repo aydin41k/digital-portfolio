@@ -1,3 +1,4 @@
+import HeadMeta from '../components/head/HeadMeta';
 import Landing from '../components/landing/Container';
 import Intro from '../components/intro/Container';
 import Educations from '../components/education/Container';
@@ -24,6 +25,7 @@ export async function getStaticProps() {
 function Home(props) {
     return (
         <Fragment>
+            <HeadMeta data={props.data.profile}/>
             <Landing data={props.data.profile} layout={props.data.layout}/>
             <Intro data={props.data.profile} contact={props.data.contact_details} bgcolor="bg-light"/>
             <Educations data={props.data.educations} bgcolor="bg-white"/>
