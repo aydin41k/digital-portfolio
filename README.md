@@ -1,5 +1,6 @@
 <div align="center">
-    <h1>:scroll:<br>Digital Portfolio v0.9</h1>
+    <img src="https://freepngimg.com/thumb/paper_sheet/2-2-paper-sheet-transparent.png" height="80px"/>
+    <h1>Digital Portfolio v1.0</h1>
 </div>
 
 ## What?
