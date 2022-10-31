@@ -4,19 +4,17 @@ import {useEffect, useState} from "react";
 function Navbar() {
     const [collapse, setCollapse] = useState(true);
     const [navbarFixed, setNavbarFixed] = useState(false);
-    const [scrollTop, setScrollTop] = useState(0);
 
     const toggleCollapse = () => {
-        setCollapse(prevState => {
-            return {...prevState, collapse: !collapse};
-        })
+        setCollapse(!collapse);
     }
 
     const registerScrollTop = () => {
         const scrollTop = document.documentElement.scrollTop;
         const screenHeight = window.innerHeight;
+        const screenWidth = window.innerWidth;
 
-        setNavbarFixed((scrollTop > screenHeight - 60));
+        setNavbarFixed((screenWidth > 768) && (scrollTop > screenHeight - 60));
     }
 
     useEffect(() => {
@@ -24,8 +22,8 @@ function Navbar() {
         window.addEventListener('scroll', registerScrollTop, false);
     }, []);
 
-    const navbarContainerClasses = `navbar navbar-default ${navbarFixed && styles.navbarFixed}`;
-    const navbarClasses = `${collapse} navbar-collapse navbar-ex1-collapse`;
+    const navbarContainerClasses = `navbar navbar-default ${navbarFixed ? styles.navbarFixed : ''}`;
+    const navbarClasses = `navbar-collapse navbar-ex1-collapse ${collapse ? 'collapse' : ''}`;
 
     return (
         <nav className={navbarContainerClasses} id="navbar-example" role="navigation">
