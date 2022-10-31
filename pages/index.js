@@ -10,6 +10,7 @@ import Footer from "../components/footer/Footer";
 
 import {Fragment} from "react";
 import fsPromises from 'fs/promises';
+import Navbar from "../components/landing/Navbar";
 
 export async function getStaticProps() {
     const jsonData = await fsPromises.readFile('./data/resume.min.json');
@@ -27,6 +28,7 @@ function Home(props) {
         <Fragment>
             <HeadMeta data={props.data.profile}/>
             <Landing data={props.data.profile} layout={props.data.layout}/>
+            <Navbar/>
             <Intro data={props.data.profile} contact={props.data.contact_details} bgcolor="bg-light"/>
             <Educations data={props.data.educations} bgcolor="bg-white"/>
             <Employments data={props.data.careers} bgcolor="bg-light"/>

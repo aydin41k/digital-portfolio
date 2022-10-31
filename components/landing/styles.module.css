@@ -3,3 +3,8 @@
     background-position: left bottom;
     background-size: initial;
 }
+
+.navbarFixed {
+    position: fixed!important;
+    top: 60px!important;
+}
