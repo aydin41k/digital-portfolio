@@ -1,3 +1,4 @@
+import '../styles/colors.css';
 import '../styles/bootstrap.css';
 import '../styles/fonts.css';
 import '../styles/globals.css';

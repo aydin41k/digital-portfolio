@@ -30,15 +30,15 @@ a {
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: var(--bg-white);
 }
 
 .bg-light {
-  background-color: #f3efe0!important;
+  background-color: var(--bg-primary)!important;
 }
 
 .bg-dark {
-  background-color: #a1d0de!important;
+  background-color: var(--bg-light-blue)!important;
 }
 
 .glyphicon {

@@ -1,23 +1,23 @@
-html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
-body { background: #F3EFE0; font-size: 15px; line-height: 1.64; }
+html, body { color: var(--text-primary); font-family: 'Open Sans', sans-serif !important; height: 100%; }
+body { background: var(--bg-primary); font-size: 15px; line-height: 1.64; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b { font-family: 'Dosis', sans-serif !important; margin-bottom: 20px; }
 h1,h4 { font-weight: 700; margin-bottom: 10px; }
-h2,h3 { font-weight: 300; color: #22A39F; }
+h2,h3 { font-weight: 300; color: var(--primary-colour); }
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
-p.lead { text-align: center; color: #727878; }
-p.lead a { color: #FFFFFF; text-decoration: underline; }
+p.lead { text-align: center; color: var(--text-secondary); }
+p.lead a { color: var(--text-white); text-decoration: underline; }
 p.lead a:hover { text-decoration: none; }
 ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
-hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity=20); }
+hr { margin: 40px 0px; border-color: var(--text-secondary); opacity: var(--overlay-opacity-20); filter:alpha(opacity=20); }
 
 .project-referal { margin-top: 40px; }
-.project-referal p { font-style: italic; color: #999999; }
+.project-referal p { font-style: italic; color: var(--text-muted); }
 
-.btn-primary { background-color: #22A39F; border-color: #1c8784; }
-.btn-primary:hover { background-color: #1c8784;  border-color: #1c8784; }
+.btn-primary { background-color: var(--primary-colour); border-color: var(--primary-colour-dark); }
+.btn-primary:hover { background-color: var(--primary-colour-dark);  border-color: var(--primary-colour-dark); }
 
 .icon { display: inline-block; background: url(images/sm_icon_sprite.png) no-repeat; height: 32px; width: 32px; }
 .icon.icon-twitter { background-position: 0px 0px; }
@@ -44,15 +44,15 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	margin-bottom: 0px;
 	padding: 0px;
 }
-.jumbotron .overlay { background-color: #22A39F; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; opacity: 0; filter:alpha(opacity=75); z-index: 2; }
+.jumbotron .overlay { background-color: var(--primary-colour); position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; opacity: 0; filter:alpha(opacity=75); z-index: 2; }
 
 .jumbotron .container { position: relative; top: 28%; z-index: 4; text-align: center; }
-.jumbotron .container > * { text-align: center; color: #FFFFFF; }
-.jumbotron .container h1 { padding-bottom: 20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; font-weight: 400; font-size: 72px;}
+.jumbotron .container > * { text-align: center; color: var(--text-white); }
+.jumbotron .container h1 { padding-bottom: 20px; border-bottom: 1px solid var(--border-white); border-bottom-color: var(--border-white-transparent); display: inline-block; font-weight: 400; font-size: 72px;}
 .jumbotron .container .lead { font-size: 28px; }
-.jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
+.jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: var(--bg-dark); text-align: center; z-index: 6; }
 .jumbotron .scroll-down .glyphicon { 
-	color: #FFFFFF; 
+	color: var(--text-white); 
 	font-size: 30px; 
 	padding-right: 2px; 
 	padding-top: 20px;
@@ -65,21 +65,21 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 .jumbotron .scroll-down:hover .glyphicon { padding-top: 25px; }
 
-.navbar  { border: 0px; background-color: #222222; position: absolute; top: 100%; right: 5%; width: 110px; z-index: 999; }
+.navbar  { border: 0px; background-color: var(--bg-dark); position: absolute; top: 100%; right: 5%; width: 110px; z-index: 999; }
 .navbar .navbar-collapse { padding: 0px; max-height: none; }
 .navbar .navbar-nav { float: none; }
 .navbar-nav { margin: 0px; }
 .navbar .nav > li { display: block; float: none; height: 80px; } 
-.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
-.navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F; color: #FFFFFF; }
+.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: var(--text-white); }
+.navbar .nav > li a:hover, .navbar .nav > li a:focus { color: var(--text-muted); }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: var(--primary-colour); color: var(--text-white); }
 .navbar-default .navbar-toggle:hover .icon-bar,
-.navbar-default .navbar-toggle:focus .icon-bar { background: #222222; }
+.navbar-default .navbar-toggle:focus .icon-bar { background: var(--bg-dark); }
 
 .fixed .navbar  { position: fixed; top: 60px; }
 
-.background-white { background: #FFFFFF; }
-.background-gray { background: #434242; }
+.background-white { background: var(--bg-white); }
+.background-gray { background: var(--bg-gray); }
 .container { max-width: 1280px; padding: 40px 180px; }
 
 #profile .row > div { margin-bottom: 20px; }
@@ -88,14 +88,14 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .experience { margin-bottom: 20px; }
 .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
 .experience .experience-details { display: block; margin-top: 6px; }
-.experience .experience-details * { color: #22A39F; }
-.experience .experience-details .seperator { color: #BCBCBC; }
+.experience .experience-details * { color: var(--primary-colour); }
+.experience .experience-details .seperator { color: var(--accent-separator); }
 
 #abilities ul > li { min-height: 30px; padding: 3px 0px; }
 #abilities ul > li .ability-title { display: inline-block; width: 60%; }
 #abilities ul > li .ability-score { float: right; }
 #abilities ul > li .ability-score .glyphicon { 
-	color: #DFE0E0; 
+	color: var(--accent-light-gray); 
 	font-size: 14px; 
 	 
 	-webkit-transition: all 0.3s;
@@ -103,14 +103,14 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-#abilities ul > li .ability-score .glyphicon.filled { color: #22A39F; }
+#abilities ul > li .ability-score .glyphicon.filled { color: var(--primary-colour); }
 
 #abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
 
 /* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
 #projects .row > div { margin-bottom: 30px; }
 #projects figure { position: relative; overflow: hidden; }
-#projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
+#projects figure h3 { color: var(--text-white); font-weight: 600; margin-bottom: 5px; }
 #projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
 #projects figure img { width: 110%; }
 #projects figure figcaption {
@@ -134,7 +134,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
     width: 100%;
 }
 #projects figure .icon { 
-	background: #22A39F;
+	background: var(--primary-colour);
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -161,12 +161,12 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 #projects .code-icon-holder a,
 #projects .code-icon-holder a:visited{
-	color:#22A39F;
+	color: var(--primary-colour);
 	text-transform: uppercase;
 	transition: 0.5s;
 }
 #projects .code-icon-holder a:hover{
-	color:#434242;
+	color: var(--text-primary);
 }
 
 #interests .interest-date {
@@ -175,21 +175,21 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 
 #contact { padding-bottom: 200px; }
-#contact h2, #contact h4, #contact .row label { color: #FFFFFF; }
+#contact h2, #contact h4, #contact .row label { color: var(--text-white); }
 #contact a { line-height: 32px; margin-bottom: 20px;  }
 #contact a .icon { float: left; margin-right: 20px; }
 #contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
 
 #contact .row input,
 #contact .row textarea {
-	color: #434242;
+	color: var(--text-primary);
 }
 
 #contact .row input[type=submit],
 .btn.btn-modal {
-	color: #fff;
-	background-color: #22A39F;
-	border-color: #22A39F;
+	color: var(--text-white);
+	background-color: var(--primary-colour);
+	border-color: var(--primary-colour);
 	transition:0.5s;
 	cursor:pointer;
 }
@@ -197,8 +197,8 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 #contact .row input[type=submit]:focus,
 .btn.btn-modal:hover,
 .btn.btn-modal:focus {
-	background-color: #fff;
-	color: #22A39F;
+	background-color: var(--bg-white);
+	color: var(--primary-colour);
 }
 .opl {
 	position:absolute;
@@ -216,7 +216,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 
 @media (max-width: 767px) { 
 	.jumbotron {
-		background: no-repeat left bottom fixed #a1d0de;
+		background: no-repeat left bottom fixed var(--bg-light-blue);
 	}
 	.jumbotron:before {
 		bottom: 100px;
@@ -229,7 +229,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	
 	.navbar  { left: 0px; width: 100%; }
 	.navbar .nav > li { height: 60px; }
-	.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
+	.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: var(--text-white); }
 	
 	.fixed .navbar { top: 0px; }
 	
@@ -281,8 +281,8 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 /*---------------*/
 
 figure.effect {
-	background: #22A39F;
-	color: #FFF;
+	background: var(--primary-colour);
+	color: var(--text-white);
 }
 
 figure.effect img {
@@ -325,7 +325,7 @@ figure.effect h3::after {
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background: #fff;
+	background: var(--bg-white);
 	content: '';
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -362,7 +362,7 @@ footer {
 }
 
 .emoji-heart {
-	color: #e83232;
+	color: var(--accent-red);
 	font-size: 1.2em;
 }
 
