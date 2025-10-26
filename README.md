@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://freepngimg.com/thumb/paper_sheet/2-2-paper-sheet-transparent.png" height="80px"/>
-    <h1>Digital Portfolio v1.0</h1>
+    <h1>Digital Portfolio v1.4</h1>
 </div>
 
 ## What?
@@ -31,6 +31,35 @@ Keep reading and you'll see how you can deploy your resume just like this.
 4. Click on "Start Deploying" and then "Continue with Github"
 5. Create an account on Vercel (they have a free tier for hobby projects - good to kick off), select and deploy your repo
 6. Now every time code is pushed/merged to the main branch of the repo, Vercel will pull it and update your deployment. Just like in those cool movies
+
+## How do I customise colours and fonts?
+
+Easy! All the theme customisation is centralised in `styles/theme.css`. This file uses CSS custom properties (variables) to control the entire look and feel of your portfolio.
+
+### Customising Colours
+
+The theme uses a comprehensive colour system. You can modify any of these CSS variables in `styles/theme.css`:
+
+- **Primary Brand Colours**: `--primary-colour`, `--primary-colour-dark`
+- **Text Colours**: `--text-primary`, `--text-secondary`, `--text-muted`, `--text-white`
+- **Background Colours**: `--bg-primary`, `--bg-white`, `--bg-dark`, `--bg-gray`, `--bg-light-blue`
+- **Accent Colours**: `--accent-red`, `--accent-light-gray`, `--accent-separator`
+- **Border Colours**: `--border-white`, `--border-white-transparent`
+
+Simply change the colour values (hex, rgb, or rgba) to match your desired colour scheme.
+
+### Customising Fonts
+
+Typography is controlled by two main variables:
+
+- `--font-family-header`: Used for headings and titles (default: 'Dosis', sans-serif)
+- `--font-family-system`: Used for body text (default: system font stack)
+
+Just update these variables with your preferred font families. Don't forget to import custom fonts in `styles/fonts.css` if needed!
+
+### Quick Start Examples
+
+The `theme.css` file includes commented-out examples at the bottom showing how to create a dark theme or switch to monospace fonts. Simply uncomment and modify these to get started quickly.
 
 ## What tech?
 
