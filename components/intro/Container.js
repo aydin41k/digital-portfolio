@@ -1,6 +1,6 @@
 function Container({data, contact}) {
     return (
-        <div className="bg-light">
+        <div className="bg-primary">
             <div id="profile" className="container">
                 <h2>Profile</h2>
                 <p className="lead">{data.tagline}</p>

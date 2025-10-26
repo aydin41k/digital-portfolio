@@ -15,17 +15,17 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - Centralised colour system with CSS custom properties
-- `styles/colors.css` file containing all colour variables
+- `styles/theme.css` file containing all colour variables
 - Organised colour variables by category (primary, text, background, accent, etc.)
 
 ### Changed
 - **BREAKING**: All hardcoded colour values replaced with CSS custom properties
 - Updated `styles/styles.css` to use colour variables instead of hex values
 - Updated `styles/globals.css` to use colour variables instead of hex values
-- Added `colors.css` import to `pages/_app.js` for global colour variable availability
+- Added `theme.css` import to `pages/_app.js` for global colour variable availability
 
 ### Technical Changes
-- Created comprehensive colour variable system in `styles/colors.css`
+- Created comprehensive colour variable system in `styles/theme.css`
 - Migrated 42+ hardcoded colour values to semantic variable names
 - Organised colours into logical groups (primary, text, background, accent, hover states)
 - Maintained all existing visual styling while enabling easy theme customisation

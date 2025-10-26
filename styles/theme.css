@@ -1,0 +1,54 @@
+:root {
+  /* Default theme */
+
+  /* Primary Brand Colours */
+  --primary-colour: #22A39F;
+  --primary-colour-dark: #1c8784;
+  
+  /* Text Colours */
+  --text-primary: #434242;
+  --text-secondary: #727878;
+  --text-muted: #999999;
+  --text-white: #FFFFFF; /* Hero text colour */
+  
+  /* Background Colours */
+  --bg-primary: #F3EFE0;
+  --bg-white: #FFFFFF;
+  --bg-white-alt: #fff;
+  --bg-dark: #222222;
+  --bg-gray: #434242;
+  --bg-light-blue: #a1d0de; /* Hero bg */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+  
+  /* Accent Colours */
+  --accent-red: #e83232;
+  --accent-light-gray: #DFE0E0;
+  --accent-separator: #BCBCBC;
+  
+  /* Border Colours */
+  --border-white: #FFFFFF;
+  --border-white-transparent: rgba(255,255,255,0.35);
+  
+  /* Special Effects */
+  --overlay-opacity: 0.75;
+  --overlay-opacity-20: 0.2;
+
+  --font-family-header: 'Dosis', sans-serif !important;
+  --font-family-system: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  /* You can customise the theme by uncommenting and editing the below */
+  /* Custom colours */
+  /* 
+  --primary-colour: #252525;
+  --bg-primary: #7d7d7d;
+  --bg-light-blue: #252525;
+  --text-primary: #fff;
+  --text-secondary: #727878; 
+  */
+
+  /* Custom Typography */
+  /* 
+  --font-family-header: Poppins, sans-serif;
+  --font-family-system: "IBM Plex Mono", monospace;
+  */
+}
