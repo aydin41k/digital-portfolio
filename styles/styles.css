@@ -1,13 +1,13 @@
-html, body { color: var(--text-primary); font-family: 'Open Sans', sans-serif !important; height: 100%; }
+html, body { color: var(--text-primary); font-family: var(--font-family-system) !important; height: 100%; }
 body { background: var(--bg-primary); font-size: 15px; line-height: 1.64; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b { font-family: 'Dosis', sans-serif !important; margin-bottom: 20px; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b { font-family: var(--font-family-header) !important; margin-bottom: 20px; }
 h1,h4 { font-weight: 700; margin-bottom: 10px; }
 h2,h3 { font-weight: 300; color: var(--primary-colour); }
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
 
-p.lead { text-align: center; color: var(--text-secondary); }
+p.lead { text-align: center; font-style: italic; }
 p.lead a { color: var(--text-white); text-decoration: underline; }
 p.lead a:hover { text-decoration: none; }
 ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
@@ -88,14 +88,14 @@ hr { margin: 40px 0px; border-color: var(--text-secondary); opacity: var(--overl
 .experience { margin-bottom: 20px; }
 .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
 .experience .experience-details { display: block; margin-top: 6px; }
-.experience .experience-details * { color: var(--primary-colour); }
+.experience .experience-details * { font-weight: 700; }
 .experience .experience-details .seperator { color: var(--accent-separator); }
 
 #abilities ul > li { min-height: 30px; padding: 3px 0px; }
 #abilities ul > li .ability-title { display: inline-block; width: 60%; }
 #abilities ul > li .ability-score { float: right; }
 #abilities ul > li .ability-score .glyphicon { 
-	color: var(--accent-light-gray); 
+	color: var(--text-secondary); 
 	font-size: 14px; 
 	 
 	-webkit-transition: all 0.3s;
@@ -103,7 +103,12 @@ hr { margin: 40px 0px; border-color: var(--text-secondary); opacity: var(--overl
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-#abilities ul > li .ability-score .glyphicon.filled { color: var(--primary-colour); }
+
+.bg-primary #abilities ul > li .ability-score .glyphicon.filled { color: var(--text-primary); }
+.bg-primary #abilities ul > li .ability-score .glyphicon { color: var(--text-secondary); }
+
+.bg-white #abilities ul > li .ability-score .glyphicon.filled { color: var(--text-secondary); }
+.bg-white #abilities ul > li .ability-score .glyphicon { color: var(--text-primary); }
 
 #abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
 

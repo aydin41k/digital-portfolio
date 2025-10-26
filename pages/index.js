@@ -29,12 +29,12 @@ function Home(props) {
             <HeadMeta data={props.data.profile}/>
             <Landing data={props.data.profile} layout={props.data.layout}/>
             <Navbar/>
-            <Intro data={props.data.profile} contact={props.data.contact_details} bgcolor="bg-light"/>
+            <Intro data={props.data.profile} contact={props.data.contact_details} bgcolor="bg-primary"/>
             <Educations data={props.data.educations} bgcolor="bg-white"/>
-            <Employments data={props.data.careers} bgcolor="bg-light"/>
+            <Employments data={props.data.careers} bgcolor="bg-primary"/>
             <Projects data={props.data.projects} bgcolor="bg-white"/>
             <Abilities
-                bgcolor="bg-light"
+                bgcolor="bg-primary"
                 computer_languages={props.data.computer_languages}
                 skills={props.data.skills}
                 languages={props.data.languages}
