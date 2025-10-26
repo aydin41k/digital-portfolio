@@ -1,0 +1,35 @@
+:root {
+  /* Primary Brand Colours */
+  /* --primary-colour: #22A39F;
+  --primary-colour-dark: #1c8784; */
+  --primary-colour: #7d7d7d;
+  --primary-colour-dark: #545454;
+  
+  /* Text Colours */
+  /* --text-primary: #434242;
+  --text-secondary: #727878; */
+  --text-primary: #545454;
+  --text-secondary: #252525;
+  --text-muted: #999999;
+  --text-white: #FFFFFF;
+  
+  /* Background Colours */
+  --bg-primary: #252525;
+  --bg-white: #FFFFFF;
+  --bg-dark: #222222;
+  --bg-gray: #434242;
+  --bg-light-blue: #a1d0de;
+  
+  /* Accent Colours */
+  --accent-red: #e83232;
+  --accent-light-gray: #DFE0E0;
+  --accent-separator: #BCBCBC;
+  
+  /* Border Colours */
+  --border-white: #FFFFFF;
+  --border-white-transparent: rgba(255,255,255,0.35);
+  
+  /* Special Effects */
+  --overlay-opacity: 0.75;
+  --overlay-opacity-20: 0.2;
+}
