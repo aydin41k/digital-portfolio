@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.2] - 2025-10-26
+
+### Changed
+- Set Node.js version requirement to 20.x
+
+### Technical Changes
+- Added `engines` field to `package.json` specifying Node.js >=20.0.0
+- Created `.nvmrc` file for nvm users with version 20
+
 ## [0.2.1] - 2025-01-27
 
 ### Added
